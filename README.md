@@ -1,6 +1,7 @@
-# Project Euler
+# Project Euler - Solutions Archive
 
-This repo is split into two parts:
+This repository contains my solutions to the Project Euler problems, along with notes explaining my reasoning and approach for each problem. 
+It is split into two parts:
 
 - [problems](problems) for the Python solutions
 - [notes](notes) for the solution writeups and reasoning
