@@ -32,3 +32,13 @@ To find the largest satisfying palindrome, we iterate through all possible value
 To check if a palindrome can be expressed as a product of two 3-digit numbers, we iterate through possible factors starting from 999 down to 100. For each factor $i$, we check if the palindrome is divisible by $i$. If it is, we calculate the corresponding factor $j = \frac{\text{palindrome}}{i}$ and check if $j$ is also a 3-digit number (i.e., between 100 and 999). If both conditions are satisfied, we have found a valid pair of factors.
 
 A small optimization for checking if a number is a product of two 3-digit numbers is when interating $i$ through possible factors starting from 999 down to 100, we check if $i \times 999$ is at least as large as the palindrome. If it is not, we can break early since further decreasing $i$ will only yield smaller products.
+
+## Problem 5: Smallest Multiple
+
+**Problem Statement:**
+> 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
+> What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
+
+**Solution Approach:**
+
+Note that the smallest number that is evenly divisible by all of the numbers from 1 to $n$ is the least common multiple (LCM) of the numbers from 1 to $n$. Thus, the answer is the LCM of the numbers from 1 to 20, which is **232792560**.
